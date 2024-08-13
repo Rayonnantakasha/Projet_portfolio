@@ -1,0 +1,185 @@
+body{
+    box-sizing: border-box;
+    margin: 0% 10% 0% 10%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header{
+    display: inline;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.header--name{
+    margin-top: 3%;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+}
+
+.header--nav{
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    width: 100%;
+    padding: 10%;
+    justify-items:center;
+ }
+
+ .headr--list{
+    text-decoration: none;
+    color: black;
+ }
+
+ .headr--nav--separator{
+    height: 1rem;
+    margin-bottom: 20%;
+}
+
+ main{
+    width: 100%;
+ }
+
+form{
+    padding-top: 10%;
+    line-height: 2.5rem;
+    justify-items: center;
+}
+
+ .card{
+    text-align: center;
+    padding-top: 15%;
+ }
+
+ .form--input--field{
+    width: 100%;
+    font-size: 20px;
+    height: 30%;
+    border: 2px solid;
+ }
+
+.button--submit{
+    text-align: center;
+    padding-bottom: 15%;
+}
+
+button{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgb(255, 142, 49);
+}
+
+footer{
+    font-size: 13px;
+    line-height: 30px;
+}
+
+.footer--nav{
+    display: inline;
+    text-align: center;
+    list-style: none;
+    padding-top: 0;
+}
+
+.footer--nav--icon{
+    display: flex;
+    gap: 5%;
+    padding-left: 5px;
+    justify-content: center;
+}
+
+.footer--separator{
+    padding-top: 30px;
+}
+
+
+@media screen and (max-width:2500px) and (min-width:1000px) {
+
+    main{
+        padding-top: 0%;
+    }
+
+    .header{
+        display: flex;
+    }
+
+    .form{
+        display: flex;
+
+    }
+
+    .form--label{
+       padding-right: 10%;
+    }
+
+    section{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .card{
+        padding-left: 10%;
+        padding-top:10%;
+    }
+
+    footer{
+        margin-bottom: 30%;
+        font-size: 15px;
+    }
+    
+    .footer--nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .button--submit{
+        padding-top: 5%;
+    }
+}
+
+@media screen and (max-width:900px) and (min-width:600px) {
+    body{
+        margin: 0% 5% 0% 5%; 
+        box-sizing: border-box;
+    }
+
+    .header{
+        display: flex;
+    }
+
+
+    .form{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 0%;
+
+    }
+
+    .form--label{
+       padding-right: 10%;
+    }
+
+    section{
+        display: inline;
+    }
+
+    .card{
+        text-align: left;
+        padding-top: 0%;
+    }
+
+    .button--submit{
+        padding-top: 5%;
+        padding-right: 30%;
+    }
+
+    footer{
+        margin-bottom: 30%;
+        font-size: 12px;
+    }
+
+    .footer--nav{
+        display: flex;
+        justify-content: space-between;
+    }
+}

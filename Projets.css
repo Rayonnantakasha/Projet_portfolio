@@ -1,0 +1,174 @@
+body{
+    box-sizing: border-box;
+    margin: 0% 5% 0% 5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header{
+    display: inline;
+    justify-content: space-between;
+}
+
+.header--name{
+    margin-top: 3%;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+}
+
+.header--nav{
+   display: flex;
+   list-style: none;
+   gap: 1.5rem;
+   width: 20%;
+   padding: 10%;
+   justify-items:center;
+}
+
+.headr--list{
+   text-decoration: none;
+   color: black;
+}
+
+.headr--nav--separator{
+    height: 1rem;
+    margin-bottom: 20%;
+}
+
+img{
+    width: 100%;
+}
+
+.section--title{
+    text-align: center;
+    padding-top: 15%;
+}
+
+.section--subtitle{
+    padding-top: 5%;
+    font-size: 15px;
+}
+
+.separator{
+    border: 2px solid;
+    color: rgba(191, 188, 188, 0.589);
+
+}
+
+footer{
+    font-size: 13px;
+    line-height: 50px;
+}
+
+.footer--nav{
+    display: inline;
+    text-align: center;
+    list-style: none;
+}
+
+.footer--nav--icon{
+    display: flex;
+    gap: 5%;
+    padding-left: 5px;
+    justify-content: center;
+}
+
+@media screen and (max-width:2560px) and (min-width:500px) {
+     body{
+        font-size: 20px;
+     }
+
+     main{
+        margin-left: 5%;
+     }
+
+
+     .header{
+        display: flex;
+     }
+
+     .header--name{
+        font-size: 1.5rem;
+     }
+
+     .section--title{
+        text-align: left;
+        padding-top: 0;
+        font-weight: bold;
+        font-size: 20px;
+     }
+
+    .section--subtitle{
+       display: none;
+       font-weight: bold;
+    }
+
+    .article{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .section--item{
+        width: 50vh;
+        padding-top: 5%;
+        font-size: 1.5rem;
+    }
+
+    img{
+        padding: 10%;
+    }
+
+    footer{
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .footer--nav{
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+@media screen and (max-width:900px) and (min-width:500px) {
+   .header,
+   .header--name,
+   .header--nav{
+    font-size: 1rem;
+   }
+
+  .section--item{
+    font-size: 0.8em;
+    width: 60vh;
+    padding-top: 0;
+  }
+
+  .section--item--active{
+    font-size: 12px;
+  }
+
+  main{
+    margin-left: 0;
+ }
+
+ img{
+    width: 40vh;
+ }
+
+footer{
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.section--subtitle{
+    font-size: 10px;
+}
+
+}
+
+@media screen and (max-width:500px) and (min-width:300px){
+    .section--item--active{
+        display: none;
+    }
+}
